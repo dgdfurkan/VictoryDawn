@@ -288,7 +288,7 @@ Transform:
   - {fileID: 2026420609238280744}
   - {fileID: 4678303921237327724}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6892963378575282206
 MonoBehaviour:
@@ -307,18 +307,22 @@ MonoBehaviour:
   MusicClips: []
   ButtonClips: []
   SFXAudios:
-  - audioType: 2
-    audio: {fileID: 8300000, guid: fb467d4131a75584db222b3fb4433059, type: 3}
   - audioType: 3
-    audio: {fileID: 8300000, guid: a10b112412339474dbd1b7bccb2d177f, type: 3}
+    audio: {fileID: 8300000, guid: fb467d4131a75584db222b3fb4433059, type: 3}
   - audioType: 4
-    audio: {fileID: 8300000, guid: 1628261e408ae074f935f7f1c97e8ca9, type: 3}
+    audio: {fileID: 8300000, guid: a10b112412339474dbd1b7bccb2d177f, type: 3}
   - audioType: 5
+    audio: {fileID: 8300000, guid: 1628261e408ae074f935f7f1c97e8ca9, type: 3}
+  - audioType: 6
     audio: {fileID: 8300000, guid: ce5a8a845d5bffa44b4871d1627770d4, type: 3}
-  - audioType: 8
+  - audioType: 7
+    audio: {fileID: 8300000, guid: 349381e07198e4640b19f2a9636a2c32, type: 3}
+  - audioType: 9
     audio: {fileID: 8300000, guid: f66ce8717346a6145bc28e39c919795d, type: 3}
   MusicAudios:
   - audioType: 0
     audio: {fileID: 8300000, guid: 2d493a89437b62d42affd0160a8a80d6, type: 3}
   - audioType: 1
     audio: {fileID: 8300000, guid: 53accc05893cfe94bbb6a7f810206cf6, type: 3}
+  - audioType: 2
+    audio: {fileID: 8300000, guid: f80683a153c4af2468d44dce57033cf4, type: 3}

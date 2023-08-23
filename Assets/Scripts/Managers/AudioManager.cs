@@ -16,7 +16,7 @@ namespace GunduzDev
     //Add all sounds
     public enum AudioTypes
     {
-        MusicTellMe, MusicSinnes, Button, Coin, Point, Smash1, Smash2, Smash3, Switch
+        MusicTellMe, MusicSinnes, MusicWar, Button, Coin, Point, Smash1, Smash2, Smash3, Switch
     }
 
     public class AudioManager : MonoSingleton<AudioManager>

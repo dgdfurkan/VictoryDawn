@@ -96,7 +96,7 @@ namespace GunduzDev
             if (Input.GetKeyDown(KeyCode.F))
             {
                 animator.SetTrigger("Attack");
-
+                SignalManager.onSFXPlay(AudioTypes.Smash2);
                 Vector2 raycastDirection = transform.right;
                 Vector2 raycastOrigin = (Vector2)transform.position + raycastDirection * 1;
                 RaycastHit2D hit = Physics2D.Raycast(raycastOrigin, raycastDirection, 10f);
@@ -172,6 +172,7 @@ namespace GunduzDev
 
         private void Dead()
         {
+            SignalManager.onSFXPlay(AudioTypes.Switch);
             rectArea.color = Color.white;
             StartCoroutine(Deadd());
             print("Dead");
@@ -192,6 +193,7 @@ namespace GunduzDev
             if (capsuleCollider.IsTouchingLayers(LayerMask.GetMask("Obstacle"))){
                 StartCoroutine(Deadd());
                 GameManager.Instance.winPanel.SetActive(true);
+                SignalManager.onSFXPlay(AudioTypes.Coin);
             }
 
             if (capsuleCollider.IsTouchingLayers(LayerMask.GetMask("Hazard")))

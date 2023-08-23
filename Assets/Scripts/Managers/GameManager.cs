@@ -18,6 +18,11 @@ namespace GunduzDev
             Instance = this;
         }
 
+        private void Start()
+        {
+            SignalManager.onMusicPlay(AudioTypes.MusicWar);
+            
+        }
         public void PlayButton()
         {
             panel.SetActive(false);

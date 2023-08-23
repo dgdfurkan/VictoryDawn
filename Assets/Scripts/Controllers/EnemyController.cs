@@ -111,6 +111,7 @@ namespace GunduzDev
             if (!isCooldownActive)
             {
                 Shoot();
+                SignalManager.onSFXPlay(AudioTypes.Smash1);
                 StartCoroutine(ShootingCooldown());
             }
         }
